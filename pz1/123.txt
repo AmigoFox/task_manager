@@ -1,0 +1,13 @@
+PS A:\Django_web_application\pz1> python manage.py createsuperuser
+Username (leave blank to use 'andrey'): andrey
+Email address: test@gmail.com
+Password:
+Password (again):
+Error: Your passwords didn't match.
+Password: 123
+Password (again): 123
+This password is too short. It must contain at least 8 characters.
+This password is too common.
+This password is entirely numeric.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.

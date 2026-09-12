@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 col-lg-6">
+        <h1 class="mb-3">{{ task.title }}</h1>
+        <form method="post">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            {% bootstrap_button button_type="submit" content="Сохранить" %}
+            <a class="btn btn-secondary ml-2" href="{% url 'tasks:tasks_list' %}">Отмена</a>
+        </form>
+    </div>
+</div>
+{% endblock %}
